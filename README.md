@@ -1,0 +1,3 @@
+# Stack Overflow in Hack
+
+This repository demonstrates a common error in Hack: stack overflow errors caused by non-tail-recursive functions.  The `foo` function calculates the factorial of a number using recursion. However, because it's not tail-recursive, each recursive call adds a new stack frame, eventually leading to a stack overflow for larger inputs.  The solution shows how to refactor the code to avoid the problem.
